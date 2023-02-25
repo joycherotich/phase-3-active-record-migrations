@@ -37,7 +37,7 @@ describe "Artist" do
   it "can roll back to have no favorite_food attribute for Artist" do    
     expect(Artist.column_names).not_to include("favorite_food")
   end
-
+  
   it "can migrate to have a favorite_flower attribute for Artist" do    
     expect(Artist.column_names).to include("favorite_flower")
   end
